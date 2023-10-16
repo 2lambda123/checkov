@@ -261,12 +261,12 @@ jobs:
       - uses: docker/setup-buildx-action@8c0edbc76e98fa90f69d9a2c020dcb50019dc325  # v2  # needed for self-hosted builds
 
       - name: Login to Docker Hub
-        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a  # v2
+        uses: docker/login-action@343f7c4344506bcbf9b4de18042ae17996df046d  # v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a  # v2
+        uses: docker/login-action@343f7c4344506bcbf9b4de18042ae17996df046d  # v2
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
