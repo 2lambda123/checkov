@@ -17,7 +17,7 @@ Full list of github organization and repository settings related checks can be f
 | CKV_GITHUB_CONFIG_FETCH_DATA| "True"                    | checkov will try to fetch GitHub configuration from API by default (unless no access token provided)                                          |
 | CKV_GITHUB_CONF_DIR_NAME   | "github_conf"             | checkov will create a new directory named "github_conf" under current working directory                                                       |
 | GITHUB_API_URL   | "https://api.github.com/" |                                                                                                                                               |
-| GITHUB_TOKEN   |                           | GitHub personal access token to be used to fetch GitHub configuration                                                                         |
+| GITHUB_TOKEN   | <TOKEN> | GitHub personal access token to be used to fetch GitHub configuration                                                                         |
 | GITHUB_REF | refs/heads/master                    | Github branch for which to fetch branch protection rules configuration                                                                        |
  | GITHUB_ORG   |                           | Github organization                                                                                                                           |
  | GITHUB_REPOSITORY |                      | Github repositry for which to fetch repository configuration info                                                                             |
