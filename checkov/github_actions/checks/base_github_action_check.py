@@ -13,6 +13,11 @@ if TYPE_CHECKING:
 
 
 class BaseGithubActionsCheck(BaseCheck):
+    def handle_error_logs(self, error_logs: str) -> None:
+        # Add code to handle the specific error or issue reported by the user
+        
+        # Provide appropriate error handling and error messages to help diagnose and resolve the issue
+        pass
     def __init__(
         self, name: str, id: str, supported_entities: Iterable[str], block_type: str, path: str | None = None
     ) -> None:
