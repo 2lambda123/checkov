@@ -58,6 +58,8 @@ Any time after you push your code to GitHub, it will run your job. If Checkov fi
 In the original examples code, the file **aws_efs_file_system.sharedstore.tf** is not set to encrypted:
 
 ```python
+// original code
+```hclhcl
 resource "aws_efs_file_system" "sharedstore" {
   creation_token = var.efs["creation_token"]
 
