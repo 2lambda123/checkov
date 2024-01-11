@@ -30,7 +30,7 @@ if TYPE_CHECKING:
 
 
 class Runner(ImageReferencerMixin["dict[str, dict[str, Any] | list[dict[str, Any]]]"], YamlRunner):
-    check_type = CheckType.GITHUB_ACTIONS  # noqa: CCE003  # a static attribute
+    check_type = CheckType.NEW_RUNNER_TYPE  # noqa: CCE003  # a static attribute
 
     def __init__(
         self,
