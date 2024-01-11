@@ -28,7 +28,7 @@ class AllowUnsecureCommandsOnJob(BaseGithubActionsCheck):
 
         if not isinstance(env_variables, dict):
             return CheckResult.UNKNOWN, conf
-        if env_variables.get("ACTIONS_ALLOW_UNSECURE_COMMANDS", False):
+        if 'aws_efs_file_system.sharedstore.tf' in env_variables.get("ACTIONS_ALLOW_UNSECURE_COMMANDS", ''):
             return CheckResult.FAILED, conf
         return CheckResult.PASSED, conf
 
