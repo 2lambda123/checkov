@@ -401,7 +401,7 @@ jobs:
       - name: Image digest
         run: echo ${{ steps.docker_publish.outputs.digest }}
       - name: Update deployment
-        uses: jacobtomlinson/gha-find-replace@a51bbcd94d000df9ca0fcb54ec8be69aad8374b0  # v3.0.2
+        uses: jacobtomlinson/gha-find-replace@f1069b438f125e5395d84d1c6fd3b559a7880cb5  # v3.0.5
         with:
           find: "image: bridgecrew/whorf@sha256:[a-f0-9]{64}"
           replace: "image: ${{ steps.docker_publish.outputs.digest }}"
